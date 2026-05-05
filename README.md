@@ -20,3 +20,5 @@ npm run build:pages
 This generates a `dist/` bundle with the correct base path and a `404.html` copy of `index.html`, which is suitable for GitHub Pages project-site hosting.
 
 If you need a different repository path, set `VITE_BASE_PATH` when building.
+
+The repository also includes `.github/workflows/deploy-pages.yml`, which builds and deploys the site to GitHub Pages automatically on pushes to `main` or via manual workflow dispatch.
