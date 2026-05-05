@@ -1110,7 +1110,8 @@ const courtRankDefinitions: readonly RankDefinition[] = [
 
 const minorRankDefinitions = [...pipRankDefinitions, ...courtRankDefinitions];
 
-const imagePath = (fileName: string): string => `/images/${fileName}`;
+const imagePath = (fileName: string): string =>
+  `${import.meta.env.BASE_URL}images/${fileName}`;
 
 const toImageFileName = (suit: SuitDefinition, order: number): string =>
   `${suit.imagePrefix}${String(order).padStart(2, '0')}.jpg`;

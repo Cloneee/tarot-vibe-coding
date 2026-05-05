@@ -19,7 +19,7 @@ export function CardGrid({
 
   if (cards.length === 0) {
     return (
-      <div className="rounded-3xl border border-dashed border-stone-300 bg-white/70 p-10 text-center text-stone-600">
+      <div className="rounded-3xl border border-dashed border-slate-300 bg-white/80 p-10 text-center text-slate-600">
         {t('grid.empty')}
       </div>
     );

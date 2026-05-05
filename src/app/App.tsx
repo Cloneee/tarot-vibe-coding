@@ -124,9 +124,9 @@ export default function App() {
 
   return (
     <I18nProvider locale={locale} setLocale={setLocale}>
-      <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_30%),linear-gradient(180deg,_#faf7f2_0%,_#f5efe6_100%)]">
+      <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.14),_transparent_32%),radial-gradient(circle_at_top_right,_rgba(99,102,241,0.12),_transparent_30%),linear-gradient(180deg,_#f8fafc_0%,_#eef2ff_100%)]">
         <main className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-8 md:px-6 lg:px-8 lg:py-12">
-          <section className="rounded-[2rem] border border-stone-200 bg-white/85 p-6 shadow-lg shadow-stone-950/5 md:p-8">
+          <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6 shadow-lg shadow-slate-950/5 md:p-8">
             <SectionHeader
               eyebrow={translate(locale, 'app.heroEyebrow')}
               title={translate(locale, 'app.heroTitle')}
@@ -134,7 +134,7 @@ export default function App() {
               actions={
                 <>
                   <LocaleSwitcher />
-                  <div className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-sm font-medium text-stone-600">
+                  <div className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-600">
                     {translate(locale, 'app.cardsAvailable', { count: cards.length })}
                   </div>
                 </>
@@ -142,29 +142,29 @@ export default function App() {
             />
 
             <div className="mt-6 grid gap-4 lg:grid-cols-3">
-              <div className="rounded-[1.75rem] border border-stone-200 bg-stone-50 p-5">
-                <p className="text-sm font-medium text-stone-500">
+              <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-5">
+                <p className="text-sm font-medium text-slate-500">
                   {translate(locale, 'app.focusedCategory')}
                 </p>
-                <p className="mt-2 text-2xl font-semibold tracking-tight text-stone-950">
+                <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
                   {activeCategory === 'all'
                     ? translate(locale, 'category.all')
                     : getCategoryLabel(locale, activeCategory)}
                 </p>
               </div>
-              <div className="rounded-[1.75rem] border border-stone-200 bg-stone-50 p-5">
-                <p className="text-sm font-medium text-stone-500">
+              <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-5">
+                <p className="text-sm font-medium text-slate-500">
                   {translate(locale, 'app.visibleCards')}
                 </p>
-                <p className="mt-2 text-2xl font-semibold tracking-tight text-stone-950">
+                <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
                   {filteredCards.length}
                 </p>
               </div>
-              <div className="rounded-[1.75rem] border border-stone-200 bg-stone-50 p-5">
-                <p className="text-sm font-medium text-stone-500">
+              <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-5">
+                <p className="text-sm font-medium text-slate-500">
                   {translate(locale, 'app.selectedCards')}
                 </p>
-                <p className="mt-2 text-2xl font-semibold tracking-tight text-stone-950">
+                <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
                   {selectedCards.length}
                 </p>
               </div>

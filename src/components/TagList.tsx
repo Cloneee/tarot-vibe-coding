@@ -4,8 +4,8 @@ interface TagListProps {
 }
 
 const toneClasses: Record<NonNullable<TagListProps['tone']>, string> = {
-  neutral: 'border-stone-200 bg-stone-100/80 text-stone-700',
-  accent: 'border-amber-200 bg-amber-100/80 text-amber-900',
+  neutral: 'border-slate-200 bg-slate-100/80 text-slate-700',
+  accent: 'border-sky-200 bg-sky-100/80 text-sky-900',
   danger: 'border-rose-200 bg-rose-100/80 text-rose-900',
 };
 

@@ -16,14 +16,14 @@ export function SectionHeader({
   return (
     <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
       <div className="space-y-2">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-700">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">
           {eyebrow}
         </p>
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold tracking-tight text-stone-950 md:text-3xl">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
             {title}
           </h2>
-          <p className="max-w-2xl text-sm leading-6 text-stone-600 md:text-base">
+          <p className="max-w-2xl text-sm leading-6 text-slate-600 md:text-base">
             {description}
           </p>
         </div>

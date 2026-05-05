@@ -20,10 +20,10 @@ export function CardFilters({
   const categoryOptions = getCategoryOptions();
 
   return (
-    <div className="rounded-3xl border border-stone-200 bg-white/90 p-5 shadow-sm shadow-stone-950/5">
+    <div className="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-sm shadow-slate-950/5">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
         <label className="flex-1">
-          <span className="mb-2 block text-sm font-medium text-stone-700">
+          <span className="mb-2 block text-sm font-medium text-slate-700">
             {t('filters.searchLabel')}
           </span>
           <input
@@ -31,14 +31,14 @@ export function CardFilters({
             value={searchTerm}
             onChange={(event) => onSearchChange(event.target.value)}
             placeholder={t('filters.searchPlaceholder')}
-            className="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-900 outline-none transition focus:border-amber-400 focus:bg-white"
+            className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-sky-400 focus:bg-white focus:ring-4 focus:ring-sky-100"
           />
         </label>
 
         <button
           type="button"
           onClick={onReset}
-          className="rounded-2xl border border-stone-200 px-4 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-300 hover:bg-stone-100"
+          className="rounded-2xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-100"
         >
           {t('filters.reset')}
         </button>
@@ -55,8 +55,8 @@ export function CardFilters({
               onClick={() => onCategoryChange(option.value)}
               className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                 isActive
-                  ? 'bg-stone-950 text-stone-50'
-                  : 'border border-stone-200 bg-stone-50 text-stone-700 hover:border-stone-300 hover:bg-white'
+                  ? 'bg-sky-600 text-white'
+                  : 'border border-slate-200 bg-slate-50 text-slate-700 hover:border-sky-300 hover:bg-white'
               }`}
             >
               {option.label}
