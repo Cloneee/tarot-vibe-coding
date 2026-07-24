@@ -66,7 +66,7 @@ export function CardDetailDialog({
               <div>
                 <h2
                   id="card-detail-title"
-                  className="text-3xl font-semibold tracking-tight text-slate-950"
+                  className="text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl"
                 >
                   {localizeText(card.name)}
                 </h2>

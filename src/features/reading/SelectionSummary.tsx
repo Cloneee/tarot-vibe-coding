@@ -19,7 +19,7 @@ export function SelectionSummary({
 
   return (
     <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6 shadow-sm shadow-slate-950/5">
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">
             {t('selection.eyebrow')}

@@ -28,7 +28,9 @@ export function SectionHeader({
           </p>
         </div>
       </div>
-      {actions ? <div className="flex items-center gap-3">{actions}</div> : null}
+      {actions ? (
+        <div className="flex flex-wrap items-center gap-3">{actions}</div>
+      ) : null}
     </div>
   );
 }
